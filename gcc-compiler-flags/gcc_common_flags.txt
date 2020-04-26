@@ -12,3 +12,18 @@
 -Wall: This will check not only for errors but also for all kinds warning like
        unused variables errors. it is good practice to use this flag while
        compiling the code.
+
+-E : The output of preprocessing stage can be produced using the -E option.
+
+-S : The assembly level output can be produced using the -S option.
+
+-I : gcc -I adds include directory of header files.
+
+-D : gcc -D defines a macro to be used by the preprocessor.
+
+-l : gcc -l links with a library file.
+
+-L : gcc -L looks in directory for library files.
+
+Reference - https://www.thegeekstuff.com/2012/10/gcc-compiler-options/
+          - https://www.rapidtables.com/code/linux/gcc.html
