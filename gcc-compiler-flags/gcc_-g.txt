@@ -1,0 +1,11 @@
+The gcc -g flag tells gcc to generate and embed debug information. ulimit -c is used to enable core file generation. You can have either of these without the other. -g adds debugging information (variable names, line numbers etc) to the executable file. It's part of what you need to do to be able to make sense of the core file.
+
+Similar to -g flag :
+
+-g produces debugging information in the OS¹s native format (stabs, COFF, XCOFF, or DWARF 2).
+
+-ggdb produces debugging information specifically intended for gdb.
+
+-ggdb3 produces extra debugging information, for example: including macro definitions.
+
+-ggdb by itself without specifying the level defaults to -ggdb2 (i.e., gdb for level 2).
