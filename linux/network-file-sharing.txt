@@ -1,0 +1,19 @@
+Setting Up an NFS Server and Client on CentOS 7
+
+Installtion - 
+	sudo yum -y install nfs-utils
+	sudo systemctl enable nfs
+	sudo systemctl start nfs
+
+Configure Server to start sharing files - 
+	edit file /etc/exports
+	(DIR_PATH) 192.168.0.0/24(rw,sync)
+	manually export the file system - $ sudo exportfs -a
+	sudo systemctl restart nfs
+
+Mount the shared file system 
+	make mount directory - $ mkdir /mnt/nfs
+	mount directory with command - $ mount (Server IP or DNS):(DIR_PATH) /mnt/nfs
+
+Reference - https://www.howtoforge.com/tutorial/setting-up-an-nfs-server-and-client-on-centos-7/
+	    https://www.dummies.com/computers/operating-systems/linux/how-to-share-files-with-nfs-on-linux-systems/	
