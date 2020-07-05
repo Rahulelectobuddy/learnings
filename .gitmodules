@@ -1,0 +1,3 @@
+[submodule "malloc-tutorial"]
+	path = malloc-tutorial
+	url = https://github.com/danluu/malloc-tutorial.git
